@@ -130,5 +130,6 @@ dmypy.json
 
 # Added
 .DS_Store
-data/shp
-private_data/
+private_data/*.csv
+private_data/*.pickle
+private_data/graphs/*.json
