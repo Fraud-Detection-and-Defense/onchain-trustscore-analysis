@@ -27,7 +27,7 @@ def execute_subgraph_query(
         - num_wallets_per_call: a batch limiter to avoid API rate
                                 limits / prevent timeouts
 
-        - json_filepath: "../private_data/*.json"
+        - json_filepath: "../private_data/graphs/*.json"
         
         - append_to_existing_file: (bool) append or overwrite data
         
