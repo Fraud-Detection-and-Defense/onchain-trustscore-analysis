@@ -1,5 +1,7 @@
 import os
 
+# for charts and graphics
+BGCOLOR = "#FAFAFA"
 
 _graphdir  = 'graphs/'
 _graphs    = ['poaps', 'snapshot', 'lens', 'poh', 'nfts', 'verses']
