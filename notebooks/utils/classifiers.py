@@ -101,6 +101,10 @@ CLASSIFIERS = [
             'Voting: active in 2+ DAOs',
             lambda x: (x['numSpaces'] >= 2 and x['numVotes'] >= 20)
         ),
+        'snapshot_user': (
+            'Voting: at least one on-chain vote',
+            lambda x: (x['numVotes'] >= 1)
+        ),
         'ens_voter': (
             'Voting: ENS',
             lambda x: ('ens.eth' in x['setSpaces']
