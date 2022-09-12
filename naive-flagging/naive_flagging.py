@@ -85,7 +85,7 @@ def summarize_flags(data, flag_var, flagged_list, outpath=None):
     result = pd.concat([
         gby[SQUELCH_ID].mean().rename("meanSquelchRate"),
         gby[TRUSTBONUS_ID].mean().rename("meanTrustBonus"),
-        gby[CONTRIBUTION_ID].count().rename("numDonations"),
+        gby[USD_AMOUNT_ID].count().rename("numDonations"),
         gby[USD_AMOUNT_ID].sum().rename("sumUSD"),
         gby[gby_vars[0]].apply(set).rename(f"set{gby_vars[0].title()}"),
         gby[gby_vars[1]].apply(set).rename(f"set{gby_vars[1].title()}")
