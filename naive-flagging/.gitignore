@@ -130,5 +130,5 @@ dmypy.json
 
 # Added
 .DS_Store
-data/*.csv
+data/
 Naive Flagging - Sandbox.ipynb
